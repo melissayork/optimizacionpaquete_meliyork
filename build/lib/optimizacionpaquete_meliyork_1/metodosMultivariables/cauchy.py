@@ -1,11 +1,6 @@
 import numpy as np
 
 def cauchy(f, x0, epsilon1, epsilon2,  maxiter, metodo):
-
-    '''
-    
-    '''
-
     def gradiente(f, x, deltaX=0.001):
         grad=[]
         for i in range(0, len(x)):
