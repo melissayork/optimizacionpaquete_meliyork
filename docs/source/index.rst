@@ -48,5 +48,6 @@ Contenido
 .. toctree::
 
    instalación
-   codigo
+   algoritmos
    links
+   funcionesObjetivo
