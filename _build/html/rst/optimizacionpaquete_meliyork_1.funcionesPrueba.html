@@ -6,30 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>optimizacionpaquete_meliyork_1.funcionesPrueba package &#8212; documentación de Paquete de optimizacion - 12/07/24</title>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=f63d8bfa" />
-    <link rel="stylesheet" type="text/css" href="../_static/haiku.css?v=dfa0e015" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css?v=0f882399" />
     <script src="../_static/documentation_options.js?v=333c9ea1"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/translations.js?v=efdbd0b9"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Búsqueda" href="../search.html" /> 
   </head><body>
-      <div class="header" role="banner"><h1 class="heading"><a href="../index.html">
-          <span>documentación de Paquete de optimizacion - 12/07/24</span></a></h1>
-        <h2 class="heading"><span>optimizacionpaquete_meliyork_1.funcionesPrueba package</span></h2>
-      </div>
-      <div class="topnav" role="navigation" aria-label="top navigation">
-      
-        <p>
-        <a class="uplink" href="../index.html">Contenidos</a>
-        </p>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice General"
+             accesskey="I">índice</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Índice de Módulos Python"
+             >módulos</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">documentación de Paquete de optimizacion - 12/07/24</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">optimizacionpaquete_meliyork_1.funcionesPrueba package</a></li> 
+      </ul>
+    </div>  
 
-      </div>
-      <div class="content" role="main">
-        
-        
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
   <section id="optimizacionpaquete-meliyork-1-funcionesprueba-package">
 <h1>optimizacionpaquete_meliyork_1.funcionesPrueba package<a class="headerlink" href="#optimizacionpaquete-meliyork-1-funcionesprueba-package" title="Link to this heading">¶</a></h1>
 <section id="submodules">
@@ -40,144 +44,508 @@
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.ackley">
 <span class="sig-prename descclassname"><span class="pre">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.</span></span><span class="sig-name descname"><span class="pre">ackley</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/optimizacionpaquete_meliyork_1/funcionesPrueba/funcionesMultivariables.html#ackley"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.ackley" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>La función Ackley es una función objetivo utilizada en pruebas de algoritmos de optimización. Es una función no convexa con un mínimo global en el origen, y su diseño es adecuado para evaluar la capacidad de los algoritmos para explorar un espacio de búsqueda con múltiples óptimos locales.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>numpy.ndarray</em>) – Un vector de números reales en el cual se evalúa la función Ackley.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>El valor de la función Ackley evaluada en el vector <cite>x</cite>.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Ejemplo<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">valor</span> <span class="o">=</span> <span class="n">ackley</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor de Ackley en x: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.beale">
 <span class="sig-prename descclassname"><span class="pre">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.</span></span><span class="sig-name descname"><span class="pre">beale</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/optimizacionpaquete_meliyork_1/funcionesPrueba/funcionesMultivariables.html#beale"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.beale" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>La función de Beale es una función objetivo utilizada en pruebas de algoritmos de optimización, especialmente en problemas de minimización. Es una función no convexa con un mínimo global en el punto (3, 0.5). La función es útil para evaluar la capacidad de los algoritmos para encontrar el mínimo en un espacio de búsqueda con características no lineales.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>numpy.ndarray</em>) – Un vector de números reales en el cual se evalúa la función de Beale. El vector debe tener exactamente dos elementos.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>El valor de la función de Beale evaluada en el vector <cite>x</cite>.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Ejemplo<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">valor</span> <span class="o">=</span> <span class="n">beale</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor de Beale en x: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.booth">
 <span class="sig-prename descclassname"><span class="pre">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.</span></span><span class="sig-name descname"><span class="pre">booth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/optimizacionpaquete_meliyork_1/funcionesPrueba/funcionesMultivariables.html#booth"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.booth" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>La función de Booth es una función objetivo utilizada en pruebas de algoritmos de optimización. Tiene un mínimo global en el punto (1, 3) y es útil para evaluar la capacidad de los algoritmos para encontrar el mínimo en problemas simples y no convexos.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>numpy.ndarray</em>) – Un vector de dos números reales en el cual se evalúa la función de Booth.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>El valor de la función de Booth evaluada en el vector <cite>x</cite>.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Ejemplo<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">valor</span> <span class="o">=</span> <span class="n">booth</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor de Booth en x: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.bunkin">
 <span class="sig-prename descclassname"><span class="pre">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.</span></span><span class="sig-name descname"><span class="pre">bunkin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/optimizacionpaquete_meliyork_1/funcionesPrueba/funcionesMultivariables.html#bunkin"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.bunkin" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>función Bunkin es no convexa con un mínimo global en el punto (0, -10). Esta función es útil para evaluar algoritmos en problemas de búsqueda con características no lineales.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>numpy.ndarray</em>) – Un vector de dos números reales en el cual se evalúa la función de Bunkin.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>El valor de la función de Bunkin evaluada en el vector <cite>x</cite>.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Ejemplo<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">10.0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">valor</span> <span class="o">=</span> <span class="n">bunkin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor de Bunkin en x: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.crossintray">
 <span class="sig-prename descclassname"><span class="pre">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.</span></span><span class="sig-name descname"><span class="pre">crossintray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/optimizacionpaquete_meliyork_1/funcionesPrueba/funcionesMultivariables.html#crossintray"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.crossintray" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>La función Cross-In-Tray es una función objetivo utilizada en pruebas de algoritmos de optimización. Tiene múltiples óptimos locales y un único mínimo global en el punto (0, 0). Es útil para evaluar la capacidad de los algoritmos para encontrar el mínimo en un espacio de búsqueda con características no lineales.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>numpy.ndarray</em>) – Un vector de dos números reales en el cual se evalúa la función Cross-In-Tray.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>El valor de la función Cross-In-Tray evaluada en el vector <cite>x</cite>.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Ejemplo<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">valor</span> <span class="o">=</span> <span class="n">crossintray</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor de Cross-In-Tray en x: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.easom">
 <span class="sig-prename descclassname"><span class="pre">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.</span></span><span class="sig-name descname"><span class="pre">easom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/optimizacionpaquete_meliyork_1/funcionesPrueba/funcionesMultivariables.html#easom"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.easom" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>La función de Easom tiene un mínimo global en el punto (π, π) y es útil para evaluar la capacidad de los algoritmos para encontrar el mínimo en problemas con una estructura bien definida.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>numpy.ndarray</em>) – Un vector de dos números reales en el cual se evalúa la función de Easom.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>El valor de la función de Easom evaluada en el vector <cite>x</cite>.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Ejemplo<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">valor</span> <span class="o">=</span> <span class="n">easom</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor de Easom en x: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.eggholder">
 <span class="sig-prename descclassname"><span class="pre">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.</span></span><span class="sig-name descname"><span class="pre">eggholder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/optimizacionpaquete_meliyork_1/funcionesPrueba/funcionesMultivariables.html#eggholder"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.eggholder" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>La función de Eggholder tiene un mínimo global en el punto (-512, 404.2319) y es útil para evaluar la capacidad de los algoritmos para encontrar mínimos en espacios de búsqueda complejos.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>numpy.ndarray</em>) – Un vector de dos números reales en el cual se evalúa la función de Eggholder.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>El valor de la función de Eggholder evaluada en el vector <cite>x</cite>.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Ejemplo<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">512.0</span><span class="p">,</span> <span class="mf">404.2319</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">valor</span> <span class="o">=</span> <span class="n">eggholder</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor de Eggholder en x: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.goldstein">
 <span class="sig-prename descclassname"><span class="pre">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.</span></span><span class="sig-name descname"><span class="pre">goldstein</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/optimizacionpaquete_meliyork_1/funcionesPrueba/funcionesMultivariables.html#goldstein"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.goldstein" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>La función de Goldstein-Price es una función objetivo compleja utilizada en pruebas de algoritmos de optimización. Tiene múltiples óptimos locales y un único mínimo global en el punto (0, 0). Es útil para evaluar la capacidad de los algoritmos para manejar problemas no convexos con varios mínimos locales.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>numpy.ndarray</em>) – Un vector de dos números reales en el cual se evalúa la función de Goldstein-Price.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>El valor de la función de Goldstein-Price evaluada en el vector <cite>x</cite>.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Ejemplo<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">valor</span> <span class="o">=</span> <span class="n">goldstein</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor de Goldstein-Price en x: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.himmelblau">
 <span class="sig-prename descclassname"><span class="pre">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.</span></span><span class="sig-name descname"><span class="pre">himmelblau</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/optimizacionpaquete_meliyork_1/funcionesPrueba/funcionesMultivariables.html#himmelblau"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.himmelblau" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>La función Himmelblau es una función objetivo utilizada en pruebas de algoritmos de optimización. Es una función no convexa con múltiples mínimos locales, y su diseño es adecuado para evaluar la capacidad de los algoritmos para explorar un espacio de búsqueda complejo.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>numpy.ndarray</em>) – Un vector de dos números reales en el cual se evalúa la función Himmelblau.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>El valor de la función Himmelblau evaluada en el vector <cite>x</cite>.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Ejemplo<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">valor</span> <span class="o">=</span> <span class="n">himmelblau</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor de Himmelblau en x: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.holdertable">
 <span class="sig-prename descclassname"><span class="pre">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.</span></span><span class="sig-name descname"><span class="pre">holdertable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/optimizacionpaquete_meliyork_1/funcionesPrueba/funcionesMultivariables.html#holdertable"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.holdertable" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>La función Holder Table  es útil para evaluar la capacidad de los algoritmos para encontrar el mínimo en un espacio de búsqueda con características complejas.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>numpy.ndarray</em>) – Un vector de dos números reales en el cual se evalúa la función Holder Table.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>El valor de la función Holder Table evaluada en el vector <cite>x</cite>.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Ejemplo<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">8.05502</span><span class="p">,</span> <span class="mf">9.66459</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">valor</span> <span class="o">=</span> <span class="n">holdertable</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor de Holder Table en x: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.levi">
 <span class="sig-prename descclassname"><span class="pre">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.</span></span><span class="sig-name descname"><span class="pre">levi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/optimizacionpaquete_meliyork_1/funcionesPrueba/funcionesMultivariables.html#levi"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.levi" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>La función de Levi tiene un mínimo global en el punto (1, 1) y es adecuada para evaluar la capacidad de los algoritmos para encontrar el mínimo en problemas no convexos.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>numpy.ndarray</em>) – Un vector de dos números reales en el cual se evalúa la función de Levi.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>El valor de la función de Levi evaluada en el vector <cite>x</cite>.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Ejemplo<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">valor</span> <span class="o">=</span> <span class="n">levi</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor de Levi en x: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Debería mostrar un valor cercano a 0.0, ya que (1.0, 1.0) es el mínimo global de la función de Levi.</span>
+</pre></div>
+</div>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.matyas">
 <span class="sig-prename descclassname"><span class="pre">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.</span></span><span class="sig-name descname"><span class="pre">matyas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/optimizacionpaquete_meliyork_1/funcionesPrueba/funcionesMultivariables.html#matyas"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.matyas" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>La función de Matyas es una función objetivo utilizada en pruebas de algoritmos de optimización. Tiene un mínimo global en el punto (0, 0) y es útil para evaluar la capacidad de los algoritmos para encontrar mínimos en problemas con características suaves.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>numpy.ndarray</em>) – Un vector de dos números reales en el cual se evalúa la función de Matyas.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>El valor de la función de Matyas evaluada en el vector <cite>x</cite>.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Ejemplo<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">valor</span> <span class="o">=</span> <span class="n">matyas</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor de Matyas en x: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.mccormick">
 <span class="sig-prename descclassname"><span class="pre">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.</span></span><span class="sig-name descname"><span class="pre">mccormick</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/optimizacionpaquete_meliyork_1/funcionesPrueba/funcionesMultivariables.html#mccormick"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.mccormick" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>La función de McCormick es una función objetivo utilizada en pruebas de algoritmos de optimización. Tiene un mínimo global en el punto (-0.54719, -1.54719) y es útil para evaluar la capacidad de los algoritmos para encontrar el mínimo en problemas con características no convexas.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>numpy.ndarray</em>) – Un vector de dos números reales en el cual se evalúa la función de McCormick.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>El valor de la función de McCormick evaluada en el vector <cite>x</cite>.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Ejemplo<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">0.54719</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.54719</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">valor</span> <span class="o">=</span> <span class="n">mccormick</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor de McCormick en x: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.rastrigin">
 <span class="sig-prename descclassname"><span class="pre">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.</span></span><span class="sig-name descname"><span class="pre">rastrigin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/optimizacionpaquete_meliyork_1/funcionesPrueba/funcionesMultivariables.html#rastrigin"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.rastrigin" title="Link to this definition">¶</a></dt>
-<dd><blockquote>
-<div><p>Calcula el valor de la función Rastrigin en un punto dado.</p>
-<p>La función Rastrigin es una función objetivo comúnmente utilizada en pruebas de algoritmos de optimización. Es una función no convexa con un mínimo global en el origen, y su diseño es adecuado para evaluar la capacidad de los algoritmos para explorar un espacio de búsqueda con múltiples óptimos locales.</p>
+<dd><p>La función Rastrigin es una función objetivo comúnmente utilizada en pruebas de algoritmos de optimización. Es una función no convexa con un mínimo global en el origen, y su diseño es adecuado para evaluar la capacidad de los algoritmos para explorar un espacio de búsqueda con múltiples óptimos locales.</p>
 <dl class="field-list simple">
-<dt class="field-odd">param x<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Un vector de números reales en el cual se evalúa la función Rastrigin.</p>
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>numpy.ndarray</em>) – Un vector de números reales en el cual se evalúa la función Rastrigin.</p>
 </dd>
-<dt class="field-even">type x<span class="colon">:</span></dt>
-<dd class="field-even"><p>numpy.ndarray</p>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>El valor de la función Rastrigin evaluada en el vector <cite>x</cite>.</p>
 </dd>
-<dt class="field-odd">return<span class="colon">:</span></dt>
-<dd class="field-odd"><p>El valor de la función Rastrigin evaluada en el vector <cite>x</cite>.</p>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
 </dd>
-<dt class="field-even">rtype<span class="colon">:</span></dt>
-<dd class="field-even"><p>float</p>
-</dd>
-</dl>
-<p>Se define como:</p>
-<div class="math notranslate nohighlight">
-\[f(x) = A \cdot n + \sum_{i=1}^n \left[x_i^2 - A \cdot \cos(2 \pi x_i)\]</div>
-</div></blockquote>
-<p>ight]</p>
-<blockquote>
-<div><p>donde:
-- ( A ) es una constante (en esta implementación, ( A = 10 )).
-- ( n ) es el número de dimensiones del vector ( x ).</p>
-<dl class="field-list simple">
-<dt class="field-odd">Example<span class="colon">:</span></dt>
-<dd class="field-odd"><p></p></dd>
+<dt class="field-even">Ejemplo<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
 </dl>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">valor</span> <span class="o">=</span> <span class="n">rastrigin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor de Rastrigin en x: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Debería mostrar un valor de la función Rastrigin en el punto (0.1, 0.2)</span>
 </pre></div>
 </div>
-</div></blockquote>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.rosenbrock">
 <span class="sig-prename descclassname"><span class="pre">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.</span></span><span class="sig-name descname"><span class="pre">rosenbrock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/optimizacionpaquete_meliyork_1/funcionesPrueba/funcionesMultivariables.html#rosenbrock"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.rosenbrock" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>También conocida como la función «valle de Rosenbrock», es una función no convexa con un mínimo global en el punto (1, 1, …, 1). Su forma es útil para evaluar el rendimiento de los algoritmos en espacios de búsqueda multidimensionales.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>numpy.ndarray</em>) – Un vector de números reales en el cual se evalúa la función de Rosenbrock.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>El valor de la función de Rosenbrock evaluada en el vector <cite>x</cite>.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Ejemplo<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">valor</span> <span class="o">=</span> <span class="n">rosenbrock</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor de Rosenbrock en x: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.schaffer2">
 <span class="sig-prename descclassname"><span class="pre">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.</span></span><span class="sig-name descname"><span class="pre">schaffer2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/optimizacionpaquete_meliyork_1/funcionesPrueba/funcionesMultivariables.html#schaffer2"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.schaffer2" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>La función de Schaffer N.2 es una función objetivo utilizada en pruebas de algoritmos de optimización. Tiene un mínimo global en el punto (0, 0) y es útil para evaluar la capacidad de los algoritmos para manejar problemas con múltiples óptimos locales.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>numpy.ndarray</em>) – Un vector de dos números reales en el cual se evalúa la función de Schaffer N.2.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>El valor de la función de Schaffer N.2 evaluada en el vector <cite>x</cite>.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Ejemplo<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">valor</span> <span class="o">=</span> <span class="n">schaffer2</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor de Schaffer N.2 en x: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.schaffer_n4">
 <span class="sig-prename descclassname"><span class="pre">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.</span></span><span class="sig-name descname"><span class="pre">schaffer_n4</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/optimizacionpaquete_meliyork_1/funcionesPrueba/funcionesMultivariables.html#schaffer_n4"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.schaffer_n4" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>La función de Schaffer N.4 es una función objetivo utilizada en pruebas de algoritmos de optimización. Tiene un mínimo global en el punto (0, 0) y es útil para evaluar la capacidad de los algoritmos para encontrar el mínimo en un espacio de búsqueda con múltiples óptimos locales.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>numpy.ndarray</em>) – Un vector de dos números reales en el cual se evalúa la función de Schaffer N.4.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>El valor de la función de Schaffer N.4 evaluada en el vector <cite>x</cite>.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Ejemplo<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">valor</span> <span class="o">=</span> <span class="n">schaffer_n4</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor de Schaffer N.4 en x: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.shekel">
 <span class="sig-prename descclassname"><span class="pre">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.</span></span><span class="sig-name descname"><span class="pre">shekel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/optimizacionpaquete_meliyork_1/funcionesPrueba/funcionesMultivariables.html#shekel"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.shekel" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>La función de Shekel tiene varios mínimos locales y es útil para evaluar la capacidad de los algoritmos para encontrar el mínimo en un espacio de búsqueda complejo.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>numpy.ndarray</em>) – Un vector de dos números reales en el cual se evalúa la función de Shekel.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>El valor de la función de Shekel evaluada en el vector <cite>x</cite>.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Ejemplo<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">valor</span> <span class="o">=</span> <span class="n">shekel</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor de Shekel en x: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.sphere">
 <span class="sig-prename descclassname"><span class="pre">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.</span></span><span class="sig-name descname"><span class="pre">sphere</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/optimizacionpaquete_meliyork_1/funcionesPrueba/funcionesMultivariables.html#sphere"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.sphere" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>La función Sphere es una función objetivo utilizada en pruebas de algoritmos de optimización. Es una función convexa con un único mínimo global en el origen, y su diseño es adecuado para evaluar la capacidad de los algoritmos para converger a un mínimo global en un espacio de búsqueda suave.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>numpy.ndarray</em>) – Un vector de números reales en el cual se evalúa la función Sphere.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>El valor de la función Sphere evaluada en el vector <cite>x</cite>.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Ejemplo<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">valor</span> <span class="o">=</span> <span class="n">sphere</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor de Sphere en x: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.styblinskitang">
 <span class="sig-prename descclassname"><span class="pre">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.</span></span><span class="sig-name descname"><span class="pre">styblinskitang</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/optimizacionpaquete_meliyork_1/funcionesPrueba/funcionesMultivariables.html#styblinskitang"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.styblinskitang" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>La función de Styblinski-Tang tiene un mínimo global en el punto (0, 0, …, 0) y es útil para evaluar la capacidad de los algoritmos para encontrar el mínimo en problemas de alta dimensionalidad.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>numpy.ndarray</em>) – Un vector de números reales en el cual se evalúa la función de Styblinski-Tang. El vector debe tener al menos dos elementos.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>El valor de la función de Styblinski-Tang evaluada en el vector <cite>x</cite>.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Ejemplo<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">valor</span> <span class="o">=</span> <span class="n">styblinskitang</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor de Styblinski-Tang en x: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.threehumpcamel">
 <span class="sig-prename descclassname"><span class="pre">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.</span></span><span class="sig-name descname"><span class="pre">threehumpcamel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/optimizacionpaquete_meliyork_1/funcionesPrueba/funcionesMultivariables.html#threehumpcamel"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.threehumpcamel" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>La función Three-Hump Camel tiene un mínimo global en el punto (0, 0) y es útil para evaluar la capacidad de los algoritmos para manejar problemas con múltiples mínimos locales.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>numpy.ndarray</em>) – Un vector de dos números reales en el cual se evalúa la función Three-Hump Camel.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>El valor de la función Three-Hump Camel evaluada en el vector <cite>x</cite>.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Ejemplo<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">valor</span> <span class="o">=</span> <span class="n">threehumpcamel</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor de Three-Hump Camel en x: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
 
 </section>
 <section id="module-optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesUnivariables">
@@ -209,15 +577,88 @@
 </section>
 
 
+            <div class="clearer"></div>
+          </div>
+        </div>
       </div>
-      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
-      
-        <p>
-        <a class="uplink" href="../index.html">Contenidos</a>
-        </p>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Tabla de contenido</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">optimizacionpaquete_meliyork_1.funcionesPrueba package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables module</a><ul>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.ackley"><code class="docutils literal notranslate"><span class="pre">ackley()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.beale"><code class="docutils literal notranslate"><span class="pre">beale()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.booth"><code class="docutils literal notranslate"><span class="pre">booth()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.bunkin"><code class="docutils literal notranslate"><span class="pre">bunkin()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.crossintray"><code class="docutils literal notranslate"><span class="pre">crossintray()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.easom"><code class="docutils literal notranslate"><span class="pre">easom()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.eggholder"><code class="docutils literal notranslate"><span class="pre">eggholder()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.goldstein"><code class="docutils literal notranslate"><span class="pre">goldstein()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.himmelblau"><code class="docutils literal notranslate"><span class="pre">himmelblau()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.holdertable"><code class="docutils literal notranslate"><span class="pre">holdertable()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.levi"><code class="docutils literal notranslate"><span class="pre">levi()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.matyas"><code class="docutils literal notranslate"><span class="pre">matyas()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.mccormick"><code class="docutils literal notranslate"><span class="pre">mccormick()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.rastrigin"><code class="docutils literal notranslate"><span class="pre">rastrigin()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.rosenbrock"><code class="docutils literal notranslate"><span class="pre">rosenbrock()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.schaffer2"><code class="docutils literal notranslate"><span class="pre">schaffer2()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.schaffer_n4"><code class="docutils literal notranslate"><span class="pre">schaffer_n4()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.shekel"><code class="docutils literal notranslate"><span class="pre">shekel()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.sphere"><code class="docutils literal notranslate"><span class="pre">sphere()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.styblinskitang"><code class="docutils literal notranslate"><span class="pre">styblinskitang()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.threehumpcamel"><code class="docutils literal notranslate"><span class="pre">threehumpcamel()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesUnivariables">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesUnivariables module</a><ul>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesUnivariables.f1"><code class="docutils literal notranslate"><span class="pre">f1()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesUnivariables.f2"><code class="docutils literal notranslate"><span class="pre">f2()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesUnivariables.f3"><code class="docutils literal notranslate"><span class="pre">f3()</span></code></a></li>
+<li><a class="reference internal" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesUnivariables.f4"><code class="docutils literal notranslate"><span class="pre">f4()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-optimizacionpaquete_meliyork_1.funcionesPrueba">Module contents</a></li>
+</ul>
+</li>
+</ul>
 
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>Esta página</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/rst/optimizacionpaquete_meliyork_1.funcionesPrueba.rst.txt"
+            rel="nofollow">Mostrar el código</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
       </div>
-
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice General"
+             >índice</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Índice de Módulos Python"
+             >módulos</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">documentación de Paquete de optimizacion - 12/07/24</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">optimizacionpaquete_meliyork_1.funcionesPrueba package</a></li> 
+      </ul>
+    </div>
     <div class="footer" role="contentinfo">
     &#169; Copyright 2024, Melissa York.
       Creado usando <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
