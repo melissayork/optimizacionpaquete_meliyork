@@ -1,4 +1,4 @@
-.. _funcionesObjetivo:
+.. _funciones:
 
 Funciones 
 ======================================
@@ -27,10 +27,11 @@ Funciones univariables
     
     from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesUnivariables import f1, f2, f3, f4
 
+
 Funciones objetivo
 ----------------------------------
 
-Rastrigin
+Funcion Rastrigin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: python
@@ -74,12 +75,6 @@ Ackley
         :type x: numpy.ndarray
         :return: El valor de la función Ackley evaluada en el vector `x`.
         :rtype: float
-
-        :Ejemplo:
-
-        >>> x = np.array([0.1, 0.2])
-        >>> valor = ackley(x)
-        >>> print(f"Valor de Ackley en x: {valor}")
 
         """
         a = 20
