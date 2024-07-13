@@ -59,6 +59,7 @@ Método de división de intervalos por la mitad
 **Ejemplo**
 
 .. code-block:: python
+    
     from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesUnivariables import f1
     from optimizacionpaquete_meliyork_1.metodosUnivariables.intervalHalving import interval_halving_method
     
