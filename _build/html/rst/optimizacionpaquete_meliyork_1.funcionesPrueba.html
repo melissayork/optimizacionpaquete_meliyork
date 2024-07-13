@@ -6,31 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>optimizacionpaquete_meliyork_1.funcionesPrueba package &#8212; documentación de Paquete de optimizacion - 12/07/24</title>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d1102ebc" />
-    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=12dfc556" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=f63d8bfa" />
+    <link rel="stylesheet" type="text/css" href="../_static/haiku.css?v=dfa0e015" />
     <script src="../_static/documentation_options.js?v=333c9ea1"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/translations.js?v=efdbd0b9"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Índice" href="../genindex.html" />
-    <link rel="search" title="Búsqueda" href="../search.html" />
-   
-  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
-  
-
-  
-  
-
+    <link rel="search" title="Búsqueda" href="../search.html" /> 
   </head><body>
-  
+      <div class="header" role="banner"><h1 class="heading"><a href="../index.html">
+          <span>documentación de Paquete de optimizacion - 12/07/24</span></a></h1>
+        <h2 class="heading"><span>optimizacionpaquete_meliyork_1.funcionesPrueba package</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        <a class="uplink" href="../index.html">Contenidos</a>
+        </p>
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          
-
-          <div class="body" role="main">
-            
+      </div>
+      <div class="content" role="main">
+        
+        
   <section id="optimizacionpaquete-meliyork-1-funcionesprueba-package">
 <h1>optimizacionpaquete_meliyork_1.funcionesPrueba package<a class="headerlink" href="#optimizacionpaquete-meliyork-1-funcionesprueba-package" title="Link to this heading">¶</a></h1>
 <section id="submodules">
@@ -106,7 +105,44 @@
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.rastrigin">
 <span class="sig-prename descclassname"><span class="pre">optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.</span></span><span class="sig-name descname"><span class="pre">rastrigin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/optimizacionpaquete_meliyork_1/funcionesPrueba/funcionesMultivariables.html#rastrigin"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.rastrigin" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><blockquote>
+<div><p>Calcula el valor de la función Rastrigin en un punto dado.</p>
+<p>La función Rastrigin es una función objetivo comúnmente utilizada en pruebas de algoritmos de optimización. Es una función no convexa con un mínimo global en el origen, y su diseño es adecuado para evaluar la capacidad de los algoritmos para explorar un espacio de búsqueda con múltiples óptimos locales.</p>
+<dl class="field-list simple">
+<dt class="field-odd">param x<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Un vector de números reales en el cual se evalúa la función Rastrigin.</p>
+</dd>
+<dt class="field-even">type x<span class="colon">:</span></dt>
+<dd class="field-even"><p>numpy.ndarray</p>
+</dd>
+<dt class="field-odd">return<span class="colon">:</span></dt>
+<dd class="field-odd"><p>El valor de la función Rastrigin evaluada en el vector <cite>x</cite>.</p>
+</dd>
+<dt class="field-even">rtype<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+<p>Se define como:</p>
+<div class="math notranslate nohighlight">
+\[f(x) = A \cdot n + \sum_{i=1}^n \left[x_i^2 - A \cdot \cos(2 \pi x_i)\]</div>
+</div></blockquote>
+<p>ight]</p>
+<blockquote>
+<div><p>donde:
+- ( A ) es una constante (en esta implementación, ( A = 10 )).
+- ( n ) es el número de dimensiones del vector ( x ).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Example<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">valor</span> <span class="o">=</span> <span class="n">rastrigin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor de Rastrigin en x: </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Debería mostrar un valor de la función Rastrigin en el punto (0.1, 0.2)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables.rosenbrock">
@@ -173,66 +209,18 @@
 </section>
 
 
-          </div>
-          
-        </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="../index.html">Paquete de optimizacion</a></h1>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        <a class="uplink" href="../index.html">Contenidos</a>
+        </p>
 
-
-
-
-
-
-
-
-<h3>Navegación</h3>
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../index.html">Documentation overview</a><ul>
-  </ul></li>
-</ul>
-</div>
-<search id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Búsqueda rápida</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-      <input type="submit" value="Ir a" />
-    </form>
-    </div>
-</search>
-<script>document.getElementById('searchbox').style.display = "block"</script>
-
-
-
-
-
-
-
-
-        </div>
       </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &#169;2024, Melissa York.
-      
-      |
-      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.3.7</a>
-      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
-      
-      |
-      <a href="../_sources/rst/optimizacionpaquete_meliyork_1.funcionesPrueba.rst.txt"
-          rel="nofollow">Page source</a>
-    </div>
 
-    
-
-    
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Melissa York.
+      Creado usando <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    </div>
   </body>
 </html>

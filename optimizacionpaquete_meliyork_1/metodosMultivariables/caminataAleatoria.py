@@ -2,8 +2,6 @@ import numpy as np
 
 def caminata_aleatoria(f, x0, step, iter_max):
     """
-    Realiza una optimización mediante el método de Caminata Aleatoria.
-
     Este método intenta encontrar un mínimo local de la función `f` realizando 
     pasos aleatorios desde el punto inicial `x0`.
 
@@ -17,7 +15,7 @@ def caminata_aleatoria(f, x0, step, iter_max):
     :type iter_max: int
     :return: El punto donde se encontró el mínimo local.
     :rtype: numpy.ndarray
-    :raises: ValueError: Si `x0` no es un numpy.ndarray.
+    :raises ValueError: Si `x0` no es un numpy.ndarray.
     
     :Ejemplo:
 
