@@ -55,7 +55,7 @@ Funcion Rastrigin
 
 .. code-block:: python
     
-    import numpy as np
+    import numpy as np 
     from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables import rastrigin
     x = np.array([0.1, 0.2])
     valor = rastrigin(x)
