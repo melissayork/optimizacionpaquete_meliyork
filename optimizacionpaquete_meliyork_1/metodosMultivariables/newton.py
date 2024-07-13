@@ -1,6 +1,58 @@
 import numpy as np
 
 def newton(f, x0, epsilon1, epsilon2, maxiter, metodo):
+
+    """
+    Este método intenta encontrar un mínimo local de la función `f` utilizando el método de Newton, que emplea tanto el gradiente como la matriz Hessiana de la función objetivo.
+
+    :param f: La función objetivo.
+    :type f: function
+    :param x0: Punto inicial.
+    :type x0: list or numpy.ndarray
+    :param epsilon1: Criterio de convergencia basado en el gradiente.
+    :type epsilon1: float
+    :param epsilon2: Criterio de convergencia basado en el cambio en las variables.
+    :type epsilon2: float
+    :param maxiter: Número máximo de iteraciones permitidas.
+    :type maxiter: int
+    :param metodo: Método de búsqueda de línea para determinar el paso óptimo.
+    :type metodo: function
+    :return: El punto donde se encontró el mínimo local.
+    :rtype: numpy.ndarray
+    
+    :Ejemplo:
+
+    >>> import numpy as np
+    >>> def rosenbrock(x):
+    >>>     return sum(100.0*(x[1:]-x[:-1]**2.0)**2.0 + (1-x[:-1])**2.0)
+    >>> def fibonacci_search(f, e, a, b):
+    >>>     L = b - a
+    >>>     fib = [0, 1]
+    >>>     while len(fib) <= e +2:
+    >>>         fib.append(fib[-1] + fib[-2])
+    >>>     k = 2
+    >>>     while k < e:
+    >>>         Lk = (fib[e - k + 2] / fib[e+ 2]) * L
+    >>>         x1 = a + Lk
+    >>>         x2 = b - Lk
+    >>>         fx1 = f(x1)
+    >>>         fx2 = f(x2)
+    >>>         if fx1 < fx2:
+    >>>             b = x2
+    >>>         elif fx1 > fx2:
+    >>>             a = x1
+    >>>         elif fx1 == fx2:
+    >>>             a=x1
+    >>>             b=x2
+    >>>         k += 1
+    >>>     return (a+b)/2
+    >>> x0=np.array([0.0, 0.0])
+    >>> epsilon1=0.001
+    >>> epsilon2=0.001
+    >>> max_iter=100
+    >>> result = newton(himmelblau, x0, epsilon1, epsilon2, 1000, fibonacci_search)
+    >>> print(f"Resultado: x = {result}, f(x) = {rosenbrock(result)}")
+    """
     terminar = False
     xk = x0
     k = 0

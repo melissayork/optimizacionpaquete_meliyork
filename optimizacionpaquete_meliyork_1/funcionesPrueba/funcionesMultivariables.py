@@ -1,9 +1,37 @@
 import numpy as np 
 
 def rastrigin(x):
-        A=10
-        n = len(x)
-        return A * n + np.sum(x**2 - A * np.cos(2 * np.pi * x))
+        
+    """
+    Calcula el valor de la función Rastrigin en un punto dado.
+
+    La función Rastrigin es una función objetivo comúnmente utilizada en pruebas de algoritmos de optimización. Es una función no convexa con un mínimo global en el origen, y su diseño es adecuado para evaluar la capacidad de los algoritmos para explorar un espacio de búsqueda con múltiples óptimos locales.
+
+    :param x: Un vector de números reales en el cual se evalúa la función Rastrigin.
+    :type x: numpy.ndarray
+    :return: El valor de la función Rastrigin evaluada en el vector `x`.
+    :rtype: float
+
+    Se define como:
+
+    .. math::
+        f(x) = A \cdot n + \sum_{i=1}^n \left[x_i^2 - A \cdot \cos(2 \pi x_i)\right]
+
+    donde:
+    - \( A \) es una constante (en esta implementación, \( A = 10 \)).
+    - \( n \) es el número de dimensiones del vector \( x \).
+
+    :Example:
+
+    >>> x = np.array([0.1, 0.2])
+    >>> valor = rastrigin(x)
+    >>> print(f"Valor de Rastrigin en x: {valor}")
+    >>> # Debería mostrar un valor de la función Rastrigin en el punto (0.1, 0.2)
+
+    """
+    A=10
+    n = len(x)
+    return A * n + np.sum(x**2 - A * np.cos(2 * np.pi * x))
 
 def ackley(x):
     a = 20

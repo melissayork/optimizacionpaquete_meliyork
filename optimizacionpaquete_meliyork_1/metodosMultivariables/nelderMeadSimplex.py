@@ -1,6 +1,26 @@
 import numpy as np
 
 def nelder_mead(funcion, inicio):
+    
+    """
+    Este método intenta encontrar un mínimo local de la función `funcion` utilizando un algoritmo de búsqueda directa conocido como el método simplex de Nelder-Mead.
+
+    :param funcion: La función objetivo que se va a minimizar.
+    :type funcion: function
+    :param inicio: El punto inicial desde donde comienza la optimización.
+    :type inicio: list or numpy.ndarray
+    :return: El punto donde se encontró el mínimo local.
+    :rtype: numpy.ndarray
+    
+    :Ejemplo:
+
+    >>> import numpy as np
+    >>> def himmelblau(x):
+    >>>     return (x[0]**2 + x[1] - 11)**2 + (x[0] + x[1]**2 - 7)**2
+    >>> inicio = np.array([-1.2, 1.0])
+    >>> result = nelder_mead(himmelblau, inicio)
+    >>> print(result)
+    """
     dimensiones = len(inicio)
     alfa = 1.0
     gamma = 2.0

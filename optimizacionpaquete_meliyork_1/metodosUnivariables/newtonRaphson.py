@@ -1,5 +1,26 @@
 
 def newton_raphson(x_0, f, E):
+    """
+    Encuentra una raíz de una función unidimensional utilizando el método de Newton-Raphson.
+
+    El método de Newton-Raphson es un método iterativo para encontrar soluciones de ecuaciones no lineales. En cada iteración, el método utiliza la derivada de la función para aproximar una mejor solución a la raíz de la ecuación.
+
+    :param x_0: El valor inicial para el punto de partida del método iterativo.
+    :type x_0: float
+    :param f: La función objetivo.
+    :type f: function
+    :param E: La tolerancia para el criterio de convergencia, el proceso se detiene cuando \(|f'(x_{\text{next}})| < E\).
+    :type E: float
+    :return: El valor de \(x\) que aproxima una raíz de la función.
+    :rtype: float
+
+    :Ejemplo:
+
+    >>> def funcion_objetivo(x):
+    >>>     return x**3 - x - 2
+    >>> raiz = newton_raphson(1.0, funcion_objetivo, 1e-5)
+    >>> print(f"Raíz encontrada: x = {raiz}, f(x) = {funcion_objetivo(raiz)}")
+    """
     def primera_derivada(x, f):
         delta = 0.0001
         return (f(x + delta) - f(x - delta)) / (2 * delta)
