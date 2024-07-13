@@ -55,7 +55,6 @@ Funcion Rastrigin
 
 .. code-block:: python
     
-    import numpy as np 
     from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables import rastrigin
     x = np.array([0.1, 0.2])
     valor = rastrigin(x)
@@ -92,7 +91,6 @@ Ackley
 
 .. code-block:: python   
 
-    import numpy as np
     from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables import ackley
     x = np.array([0.1, 0.2])
     valor = ackley(x)
@@ -121,7 +119,6 @@ Himmelblau
 
 .. code-block:: python
     
-    import numpy as np
     from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables import himmelblau
     x = np.array([3.0, 2.0])
     valor = himmelblau(x)
@@ -151,7 +148,6 @@ Sphere
 
 .. code-block:: python
    
-    import numpy as np
     from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables import sphere
 
     x = np.array([1.0, 2.0, 3.0])
@@ -165,7 +161,7 @@ Rosenbrock
 .. code-block:: python
 
     def rosenbrock(x):
-        
+
         """
         También conocida como la función "valle de Rosenbrock", es una función no convexa con un mínimo global en el punto (1, 1, ..., 1). Su forma es útil para evaluar el rendimiento de los algoritmos en espacios de búsqueda multidimensionales.
 
@@ -181,9 +177,7 @@ Rosenbrock
 
 .. code-block:: python
     
-    import numpy as np
     from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables import rosenbrock
-
     x = np.array([1.0, 1.0])
     valor = rosenbrock(x)
     print(f"Valor de Rosenbrock en x: {valor}")
