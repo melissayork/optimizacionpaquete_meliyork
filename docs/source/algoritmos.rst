@@ -58,7 +58,7 @@ Método de división de intervalos por la mitad
             
 **Ejemplo**
 
-.. code-block:: python
+.. code-block:: python 
     
     from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesUnivariables import f1
     from optimizacionpaquete_meliyork_1.metodosUnivariables.intervalHalving import interval_halving_method
@@ -196,8 +196,7 @@ Método de la sección dorada (Búsqueda Dorada)
 
 **Ejemplo**
 
-.. code-block:: python
-    :Ejemplo:
+.. code-block:: python 
 
     from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesUnivariables import f1
     from optimizacionpaquete_meliyork_1.metodosUnivariables.busquedaDorada import busquedaDorada
@@ -208,6 +207,7 @@ Método de la sección dorada (Búsqueda Dorada)
     
     resul = busquedaDorada(f1, e, a, b)
     print(f"Resultado: x = {resul}, f(x) = {f1(resul)}")
+
  
 Métodos basados en la derivada
 ----------------------------------
