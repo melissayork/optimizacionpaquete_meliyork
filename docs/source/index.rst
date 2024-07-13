@@ -47,6 +47,6 @@ Contenido
 
 .. toctree::
 
-   Instalación
+   instalación
    codigo
    links
