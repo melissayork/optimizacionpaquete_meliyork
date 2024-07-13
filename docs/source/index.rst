@@ -32,16 +32,6 @@ Se presenta la documentación para el paquete "optimizacionpaquete_meliyork_1," 
 
 Para poder instalar este paquete revisa la seccion: :doc:`Instalación` en el apartado de Contenido 
 
-
-Estructura del paquete
-===========
-
-
-
-.. note::
-
-   Este proyecto está en desarrollo activo.
-
 Contenido
 --------
 
@@ -50,4 +40,8 @@ Contenido
    instalación
    algoritmos
    links
-   funcionesObjetivo
+   funciones
+
+.. note::
+
+   Este proyecto está en desarrollo activo.
