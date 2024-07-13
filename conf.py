@@ -35,3 +35,11 @@ language = 'es'
 
 html_theme =  "nature"
 html_static_path = ['_static']
+
+import os
+on_rtd = os.environ.get('READTHEDOCS') == 'True'
+
+if on_rtd:
+    html_output = os.path.join(os.environ['READTHEDOCS_OUTPUT'], 'html')
+else:
+    html_output = '_build/html'
