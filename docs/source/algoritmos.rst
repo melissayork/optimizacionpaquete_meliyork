@@ -61,12 +61,12 @@ Método de división de intervalos por la mitad
 .. code-block:: python 
     
     from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesUnivariables import f1
-    from optimizacionpaquete_meliyork_1.metodosUnivariables.intervalHalving import interval_halving_method
+    from optimizacionpaquete_meliyork_1.metodosUnivariables.fibonacci import fibonacci_search
     
-    e=1e-5
+    e=3
     a=0
     b=4
-    result= interval_halving_method(f1, e, a, b)
+    result = fibonacci_search(f1, e, a, b)
     print(f"Resultado: x = {result}, f(x) = {f1(result)}")
     
 
