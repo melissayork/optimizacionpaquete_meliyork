@@ -1,7 +1,7 @@
 Instalacion
 =====
 
-.. _Instalación:
+.. _instalación:
 
 Puedes instalar la última versión de `optimizacionpaquete_meliyork_1` desde PyPI usando pip:
 
