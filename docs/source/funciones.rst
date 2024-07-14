@@ -184,9 +184,192 @@ Rosenbrock
 
 
 
+Beale
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. code-block:: python
+
+    def beale(x):
+        
+        """
+        La función de Beale es una función objetivo utilizada en pruebas de algoritmos de optimización, especialmente en problemas de minimización. Es una función no convexa con un mínimo global en el punto (3, 0.5). La función es útil para evaluar la capacidad de los algoritmos para encontrar el mínimo en un espacio de búsqueda con características no lineales.
+
+        :param x: Un vector de números reales en el cual se evalúa la función de Beale. El vector debe tener exactamente dos elementos.
+        :type x: numpy.ndarray
+        :return: El valor de la función de Beale evaluada en el vector `x`.
+        :rtype: float
+
+        """
+        return ((1.5 - x[0] + x[0] * x[1])**2 +
+                (2.25 - x[0] + x[0] * x[1]**2)**2 +
+                (2.625 - x[0] + x[0] * x[1]**3)**2)
+
+**Ejemplo de uso**
+
+
+.. code-block:: python
+
+    from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables import beale
+    x = np.array([3.0, 0.5])
+    valor = beale(x)
+    print(f"Valor de Beale en x: {valor}")
 
 
 
+Goldstein
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+
+    def goldstein(self, x):
+        
+        """
+        La función de Goldstein-Price es una función objetivo compleja utilizada en pruebas de algoritmos de optimización. Tiene múltiples óptimos locales y un único mínimo global en el punto (0, 0). Es útil para evaluar la capacidad de los algoritmos para manejar problemas no convexos con varios mínimos locales.
+
+        :param x: Un vector de dos números reales en el cual se evalúa la función de Goldstein-Price.
+        :type x: numpy.ndarray
+        :return: El valor de la función de Goldstein-Price evaluada en el vector `x`.
+        :rtype: float
+
+
+
+        """
+        a = (1 + (x[0] + x[1] + 1)**2 * 
+                    (19 - 14 * x[0] + 3 * x[0]**2 - 14 * x[1] + 6 * x[0] * x[1] + 3 * x[1]**2))
+        b = (30 + (2 * x[0] - 3 * x[1])**2 * 
+                    (18 - 32 * x[0] + 12 * x[0]**2 + 48 * x[1] - 36 * x[0] * x[1] + 27 * x[1]**2))
+        return a * b
+
+**Ejemplo de uso**
+
+
+.. code-block:: python
+
+    from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables import goldstein
+    x = np.array([0.0, 0.0])
+    valor = goldstein(x)
+    print(f"Valor de Goldstein-Price en x: {valor}")}
+
+
+
+Booth
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+
+    def booth(x):
+        
+        """
+        La función de Booth es una función objetivo utilizada en pruebas de algoritmos de optimización. Tiene un mínimo global en el punto (1, 3) y es útil para evaluar la capacidad de los algoritmos para encontrar el mínimo en problemas simples y no convexos.
+
+        :param x: Un vector de dos números reales en el cual se evalúa la función de Booth.
+        :type x: numpy.ndarray
+        :return: El valor de la función de Booth evaluada en el vector `x`.
+        :rtype: float
+
+        """
+        return (x[0] + 2 * x[1] - 7)**2 + (2 * x[0] + x[1] - 5)**2
+
+
+**Ejemplo de uso**
+
+.. code-block:: python
+  
+    from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables import booth
+    x = np.array([1.0, 3.0])
+    valor = booth(x)
+    print(f"Valor de Booth en x: {valor}")
+
+
+
+
+Bunkin
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+
+    def bunkin(x):
+        """
+        función Bunkin es no convexa con un mínimo global en el punto (0, -10). Esta función es útil para evaluar algoritmos en problemas de búsqueda con características no lineales.
+
+        :param x: Un vector de dos números reales en el cual se evalúa la función de Bunkin.
+        :type x: numpy.ndarray
+        :return: El valor de la función de Bunkin evaluada en el vector `x`.
+        :rtype: float
+
+
+        """
+        return 100 * np.sqrt(np.abs(x[1] - 0.001 * x[0]**2)) + 0.01 * np.abs(x[0] + 10)
+
+**Ejemplo de uso**
+
+.. code-block:: python
+
+    from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables import bunkin
+    x = np.array([0.0, -10.0])
+    valor = bunkin(x)
+    print(f"Valor de Bunkin en x: {valor}")
+
+
+
+Matyas
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+    def matyas(x):
+        
+        """
+        La función de Matyas es una función objetivo utilizada en pruebas de algoritmos de optimización. Tiene un mínimo global en el punto (0, 0) y es útil para evaluar la capacidad de los algoritmos para encontrar mínimos en problemas con características suaves.
+
+        :param x: Un vector de dos números reales en el cual se evalúa la función de Matyas.
+        :type x: numpy.ndarray
+        :return: El valor de la función de Matyas evaluada en el vector `x`.
+        :rtype: float
+
+        """  
+        return 0.26 * (x[0]**2 + x[1]**2) - 0.48 * x[0] * x[1]
+
+**Ejemplo de uso**
+
+.. code-block:: python
+
+    from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables import matyas
+    x = np.array([0.0, 0.0])
+    valor = matyas(x)
+    print(f"Valor de Matyas en x: {valor}")
+
+
+
+
+Levi
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+
+    def levi(x):
+        
+        """
+        La función de Levi tiene un mínimo global en el punto (1, 1) y es adecuada para evaluar la capacidad de los algoritmos para encontrar el mínimo en problemas no convexos.
+
+        :param x: Un vector de dos números reales en el cual se evalúa la función de Levi.
+        :type x: numpy.ndarray
+        :return: El valor de la función de Levi evaluada en el vector `x`.
+        :rtype: float
+
+        """
+        a = np.sin(3 * np.pi * x[0])**2
+        b= (x[0] - 1)**2 * (1 + np.sin(3 * np.pi * x[1])**2)
+        c= (x[1] - 1)**2 * (1 + np.sin(2 * np.pi * x[1])**2)
+        return a + b + c
+
+**Ejemplo de uso**
+
+.. code-block:: python
+
+    from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables import levi
+    x = np.array([1.0, 1.0])
+    valor = levi(x)
+    print(f"Valor de Levi en x: {valor}")
+        
 
 
 
