@@ -372,5 +372,294 @@ Levi
         
 
 
+Three-Hump Camel
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+    def threehumpcamel(x):
+        
+        """
+        La función Three-Hump Camel tiene un mínimo global en el punto (0, 0) y es útil para evaluar la capacidad de los algoritmos para manejar problemas con múltiples mínimos locales.
+
+        :param x: Un vector de dos números reales en el cual se evalúa la función Three-Hump Camel.
+        :type x: numpy.ndarray
+        :return: El valor de la función Three-Hump Camel evaluada en el vector `x`.
+        :rtype: float
+   
+        """
+        return 2 * x[0]**2 - 1.05 * x[0]**4 + (x[0]**6) / 6 + x[0] * x[1] + x[1]**2
 
 
+**Ejemplo de uso**
+
+.. code-block:: python
+    
+    from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables import threehumpcamel
+    x = np.array([0.0, 0.0])
+    valor = threehumpcamel(x)
+    print(f"Valor de Three-Hump Camel en x: {valor}")
+
+
+Easom
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. code-block:: python
+    def easom(x):
+        
+        """
+        La función de Easom tiene un mínimo global en el punto (π, π) y es útil para evaluar la capacidad de los algoritmos para encontrar el mínimo en problemas con una estructura bien definida.
+
+        :param x: Un vector de dos números reales en el cual se evalúa la función de Easom.
+        :type x: numpy.ndarray
+        :return: El valor de la función de Easom evaluada en el vector `x`.
+        :rtype: float
+
+
+        """
+        return -np.cos(x[0]) * np.cos(x[1]) * np.exp(-(x[0] - np.pi)**2 - (x[1] - np.pi)**2)
+
+**Ejemplo de uso**
+
+.. code-block:: python
+
+    from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables import easom
+    x = np.array([np.pi, np.pi])
+    valor = easom(x)
+    print(f"Valor de Easom en x: {valor}")
+
+
+Cross-In-Tray
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+    def crossintray(x):
+        
+        """
+        La función Cross-In-Tray es una función objetivo utilizada en pruebas de algoritmos de optimización. Tiene múltiples óptimos locales y un único mínimo global en el punto (0, 0). Es útil para evaluar la capacidad de los algoritmos para encontrar el mínimo en un espacio de búsqueda con características no lineales.
+
+        :param x: Un vector de dos números reales en el cual se evalúa la función Cross-In-Tray.
+        :type x: numpy.ndarray
+        :return: El valor de la función Cross-In-Tray evaluada en el vector `x`.
+        :rtype: float
+
+        """
+        op = np.abs(np.sin(x[0]) * np.sin(x[1]) * np.exp(np.abs(100 - np.sqrt(x[0]**2 + x[1]**2) / np.pi)))
+        return -0.0001 * (op + 1)**0.1
+
+**Ejemplo de uso**
+
+.. code-block:: python
+
+    from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables import crossintray
+    x = np.array([0.0, 0.0])
+    valor = crossintray(x)
+    print(f"Valor de Cross-In-Tray en x: {valor}")
+
+
+
+Eggholder
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+
+    def eggholder(x):
+        
+        """
+        La función de Eggholder tiene un mínimo global en el punto (-512, 404.2319) y es útil para evaluar la capacidad de los algoritmos para encontrar mínimos en espacios de búsqueda complejos.
+
+        :param x: Un vector de dos números reales en el cual se evalúa la función de Eggholder.
+        :type x: numpy.ndarray
+        :return: El valor de la función de Eggholder evaluada en el vector `x`.
+        :rtype: float
+
+        """
+        a = -(x[1] + 47) * np.sin(np.sqrt(np.abs(x[0] / 2 + (x[1] + 47))))
+        b = -x[0] * np.sin(np.sqrt(np.abs(x[0] - (x[1] + 47))))
+        return a + b
+
+
+**Ejemplo de uso**
+
+.. code-block:: python
+    
+    from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables import eggholder
+    x = np.array([-512.0, 404.2319])
+    valor = eggholder(x)
+    print(f"Valor de Eggholder en x: {valor}")
+
+
+
+Holdertable
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. code-block:: python
+    def holdertable(x):
+        """
+        La función Holder Table  es útil para evaluar la capacidad de los algoritmos para encontrar el mínimo en un espacio de búsqueda con características complejas.
+
+        :param x: Un vector de dos números reales en el cual se evalúa la función Holder Table.
+        :type x: numpy.ndarray
+        :return: El valor de la función Holder Table evaluada en el vector `x`.
+        :rtype: float
+
+        """
+        return -np.abs(  np.sin(x[0])*np.cos(x[1]) * np.exp(np.abs(1-((np.sqrt(x[0]**2 + x[1]**2))/(np.pi))))   )
+
+**Ejemplo de uso**
+
+.. code-block:: python
+
+    from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables import holdertable 
+    x = np.array([8.05502, 9.66459])
+    valor = holdertable(x)
+    print(f"Valor de Holder Table en x: {valor}")
+
+
+McCormick
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. code-block:: python
+    
+    def mccormick(x):
+        """
+        La función de McCormick es una función objetivo utilizada en pruebas de algoritmos de optimización. Tiene un mínimo global en el punto (-0.54719, -1.54719) y es útil para evaluar la capacidad de los algoritmos para encontrar el mínimo en problemas con características no convexas.
+
+        :param x: Un vector de dos números reales en el cual se evalúa la función de McCormick.
+        :type x: numpy.ndarray
+        :return: El valor de la función de McCormick evaluada en el vector `x`.
+        :rtype: float
+
+        """
+        return np.sin(x[0] + x[1]) + (x[0] - x[1])**2 - 1.5 * x[0] + 2.5 * x[1] + 1
+
+**Ejemplo de uso**
+
+.. code-block:: python
+
+    from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables import mccormick
+    x = np.array([-0.54719, -1.54719])
+    valor = mccormick(x)
+    print(f"Valor de McCormick en x: {valor}")
+
+
+Schaffer N.2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+
+    def schaffer2(x):
+    
+        """
+        La función de Schaffer N.2 es una función objetivo utilizada en pruebas de algoritmos de optimización. Tiene un mínimo global en el punto (0, 0) y es útil para evaluar la capacidad de los algoritmos para manejar problemas con múltiples óptimos locales.
+
+        :param x: Un vector de dos números reales en el cual se evalúa la función de Schaffer N.2.
+        :type x: numpy.ndarray
+        :return: El valor de la función de Schaffer N.2 evaluada en el vector `x`.
+        :rtype: float
+
+        """ 
+        numerador = np.sin(x[0]**2 - x[1]**2)**2 - 0.5
+        denominador = (1 + 0.001 * (x[0]**2 + x[1]**2))**2
+        return 0.5 + numerador / denominador
+
+
+**Ejemplo de uso**
+
+.. code-block:: python
+
+    from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables import schaffer2
+    x = np.array([0.0, 0.0])
+    valor = schaffer2(x)
+    print(f"Valor de Schaffer N.2 en x: {valor}")
+
+
+Schaffer N.4
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+
+    def schaffer_n4(x):
+        
+        """
+
+        La función de Schaffer N.4 es una función objetivo utilizada en pruebas de algoritmos de optimización. Tiene un mínimo global en el punto (0, 0) y es útil para evaluar la capacidad de los algoritmos para encontrar el mínimo en un espacio de búsqueda con múltiples óptimos locales.
+
+        :param x: Un vector de dos números reales en el cual se evalúa la función de Schaffer N.4.
+        :type x: numpy.ndarray
+        :return: El valor de la función de Schaffer N.4 evaluada en el vector `x`.
+        :rtype: float
+
+        """
+        
+        term1 = np.cos(np.sin(np.abs(x[0]**2 - x[1]**2)))**2
+        term2 = 1 + 0.001 * (x[0]**2 + x[1]**2)
+        return 0.5 + (term1 - 0.5) / term2
+
+**Ejemplo de uso**
+
+.. code-block:: python
+
+    from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables import schaffer_n4
+    x = np.array([0.0, 0.0])
+    valor = schaffer_n4(x)
+    print(f"Valor de Schaffer N.4 en x: {valor}")
+
+
+Styblinski-Tang
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+
+    def styblinskitang(x):
+    
+    """
+    La función de Styblinski-Tang tiene un mínimo global en el punto (0, 0, ..., 0) y es útil para evaluar la capacidad de los algoritmos para encontrar el mínimo en problemas de alta dimensionalidad.
+
+    :param x: Un vector de números reales en el cual se evalúa la función de Styblinski-Tang. El vector debe tener al menos dos elementos.
+    :type x: numpy.ndarray
+    :return: El valor de la función de Styblinski-Tang evaluada en el vector `x`.
+    :rtype: float
+
+    """
+    return np.sum(x**4 - 16 * x**2 + 5 * x) / 2
+
+**Ejemplo de uso**
+
+.. code-block:: python
+
+    from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables import styblinskitang
+    x = np.array([0.0, 0.0])
+    valor = styblinskitang(x)
+    print(f"Valor de Styblinski-Tang en x: {valor}")
+
+
+Shekel
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+   
+    def shekel(x):
+
+        """
+        La función de Shekel tiene varios mínimos locales y es útil para evaluar la capacidad de los algoritmos para encontrar el mínimo en un espacio de búsqueda complejo.
+
+        :param x: Un vector de dos números reales en el cual se evalúa la función de Shekel.
+        :type x: numpy.ndarray
+        :return: El valor de la función de Shekel evaluada en el vector `x`.
+        :rtype: float
+
+        """
+        a = np.array([[4, 4, 4, 4],
+                    [1, 1, 1, 1]])
+        c = np.array([0.1, 0.2, 0.2, 0.4])
+        result = 0
+        for i in range(len(c)):
+            result += 1 / (c[i] + (x[0] - a[0, i])**2 + (x[1] - a[1, i])**2)
+        return result
+
+**Ejemplo de uso**
+
+.. code-block:: python
+    
+    from optimizacionpaquete_meliyork_1.funcionesPrueba.funcionesMultivariables import shekel
+    x = np.array([0.0, 0.0])
+    valor = shekel(x)
+    print(f"Valor de Shekel en x: {valor}")
+     
